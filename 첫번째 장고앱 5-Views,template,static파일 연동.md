@@ -17,7 +17,7 @@
   
   ```html
   <!doctype html>
-{% load staticfiles %}
+{% load static %}
 
 <link rel ="stylesheet" href="{%static 'css/lotto.css'%}">
 ```
