@@ -19,5 +19,6 @@ from mylotto import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-	path('lotto/',views.index, name ='index')
+	path('',views.index, name ='index'),
+	path('new/',views.post, name ='new_lotto'),
 ]

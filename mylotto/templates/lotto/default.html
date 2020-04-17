@@ -1,4 +1,12 @@
 <!doctype html>
-{% load staticfiles %}
+{% load static %}
 
 <link rel ="stylesheet" href="{%static 'css/lotto.css'%}">
+
+<div class = "container lotto">
+	{% for lotto in lottos %}
+	<h2>{{lotto.text}}<h2>
+	<p>last update : {{lotto.update_date}} by {{lotto.name}}</p>
+	<p>{{lotto.lottos|linebreaksbr}}</p>
+	{% endfor %}
+</div>
