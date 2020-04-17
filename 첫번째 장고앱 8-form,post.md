@@ -48,9 +48,9 @@ class PostForm(forms.ModelForm):
   </body>
 </html>
 ```  
-- `{{form.as_table}}` : <tr> tag로 form을 렌더링 해준다
-- `{{form.as_p}}` : <p>로 감싸 form을 렌더링 해준다
-- `{{form.as_ul}}` : <li>로 감싸 form을 렌더링 해준다
+- `{{form.as_table}}` : `<tr>` tag로 form을 렌더링 해준다
+- `{{form.as_p}}` : `<p>`로 감싸 form을 렌더링 해준다
+- `{{form.as_ul}}` : `<li>`로 감싸 form을 렌더링 해준다
 
 - post 처리
   - get으로 접속했을때 화면과,post로 접속했을 때 화면을 분기
