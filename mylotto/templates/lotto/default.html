@@ -3,6 +3,12 @@
 
 <link rel ="stylesheet" href="{%static 'css/lotto.css'%}">
 
+<h1>My lotto page<a herf="{% url 'new_lotto' %}">
+      <span class="glyphicon glyphicon-plus btn btn-default"></span>
+</a></h1>
+<h2><a herf="{% url 'lotto_detail' lottokey=lotto.pk %}">{{lotto.text}}</a></h2>
+
+
 <div class = "container lotto">
 	{% for lotto in lottos %}
 	<h2>{{lotto.text}}<h2>
